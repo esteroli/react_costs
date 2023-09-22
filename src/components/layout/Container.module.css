@@ -1,0 +1,21 @@
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.min_height {
+    min-height: 75%;
+    background-color: #FFECD2;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.colum {
+    flex-direction: column;
+    justify-content: flex-start;
+}
