@@ -2,7 +2,6 @@
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    margin: auto;
     flex-wrap: wrap;
 }
 
@@ -11,8 +10,8 @@
     background-color: #FFECD2;
 }
 
-.start {
-    justify-content: flex-start;
+.center {
+    justify-content: center;
 }
 
 .colum {

@@ -1,0 +1,98 @@
+/* rosa claro - #FFB8BD, 
+   azul claro - #C9C6FE, 
+   verde claro - #B4B572, 
+   laranja - #FF6340, 
+   amarelo - #FFC14C,
+   amarelo fonte - #ffbb33,
+   verde fundo - #212719
+   rosa fundo - #FFECD2 */
+
+.project_card {
+    margin: 15px;
+    padding: 6px;
+    padding-bottom: 10px;
+    width: 20%;
+    border: 2px solid #212719;
+    border-radius: 0 15px 0 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.448);
+}
+
+.project_card h4 {
+    margin-bottom: 5px;
+    padding: 3px 0px 3px 6px;
+    border-radius: 0 10px 0 0;
+    background-color: #212719;
+    color: #ffbb33;
+    font-size: 1.4em;
+}
+
+.project_card p {
+    color: #212719;
+    /* margin-bottom: 7px; */
+    margin: 0 0 10px 8px;
+}
+
+.project_card p span {
+    font-weight: bold;
+}
+
+.category_text {
+    display: flex;
+    align-items: center;
+}
+
+.category_text span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 5px;
+}
+
+.category_text .infra {
+    background-color: #FFB8BD;
+}
+
+.category_text .desenvolvimento {
+    background-color: #C9C6FE;
+}
+
+.category_text .design {
+    background-color: #B4B572;
+}
+
+.category_text .planejamento {
+    background-color: #FF6340;
+}
+
+.project_card_actions {
+    display: flex;
+    justify-content: center;
+}
+
+.project_card_actions a,
+.project_card_actions button {
+    text-decoration: none;
+    border: none;
+    background-color: #212719;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: .9em;
+    padding: 3px 15px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 1px solid #212719;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.project_card_actions a:hover,
+.project_card_actions button:hover {
+    color: #ffbb33;
+    cursor: pointer;
+}
+
+.project_card_actions svg {
+    margin-right: 5px;
+}

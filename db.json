@@ -1,21 +1,98 @@
 {
-    "projects": [],
-    "categories": [
+  "projects": [
+    {
+      "name": "Teste",
+      "budget": "50000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 12120,
+      "services": [
         {
-            "id": 1,
-            "name": "Infra"
+          "name": "serviço tal",
+          "cost": "12000",
+          "description": "faz isso aqui",
+          "id": "eacff0d0-ada1-4f8c-bbe3-8ead7e91b97f"
         },
         {
-            "id": 2,
-            "name": "Desenvolvimento"
-        },
-        {
-            "id": 3,
-            "name": "Design"
-        },
-        {
-            "id": 4,
-            "name": "Planejamento"
+          "name": "serviço tal 2",
+          "cost": "120",
+          "description": "baratin",
+          "id": "266a8489-db95-45db-a182-bdedf79d1879"
         }
-    ]
+      ],
+      "id": 1
+    },
+    {
+      "name": "Teste 2",
+      "budget": "10.000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 9,
+      "services": [
+        {
+          "name": "Tela de cadastro",
+          "cost": "3.000",
+          "description": "Criar tela de cadastro bonitinha",
+          "id": "ac018d4b-5784-4171-9374-af6023d1450e"
+        },
+        {
+          "name": "Tela de cadastro",
+          "cost": "3.000",
+          "description": "Criar tela de cadastro bonitinha",
+          "id": "ac018d4b-5784-4171-9374-af6023d1450e"
+        },
+        {
+          "name": "Tela de cadastro",
+          "cost": "3.000",
+          "description": "Criar tela de cadastro bonitinha",
+          "id": "ac018d4b-5784-4171-9374-af6023d1450e"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Teste 4",
+      "budget": "2.600",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Projetin Bonitin",
+      "budget": "10000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
 }

@@ -1,0 +1,29 @@
+.infos {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.infos img {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.infos h1 {
+    width: 168px;
+    margin: 0 auto;
+    color: #212719;
+    font-family: 'Special Elite', monospace;
+}
+
+.typing_animation {
+    animation: blinckCursor 500ms infinite normal, 
+        typing 4s steps(14) 1s normal;
+}
+
+.infos p {
+    font-style: italic;
+    font-size: 0.9em;
+}
