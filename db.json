@@ -55,26 +55,14 @@
       "id": 2
     },
     {
-      "name": "Teste 4",
-      "budget": "2.600",
+      "name": "teste",
       "category": {
         "id": "3",
         "name": "Design"
       },
       "cost": 0,
       "services": [],
-      "id": 4
-    },
-    {
-      "name": "Projetin Bonitin",
-      "budget": "10000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
+      "id": 3
     }
   ],
   "categories": [

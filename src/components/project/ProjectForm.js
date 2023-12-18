@@ -8,7 +8,8 @@ import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton'
 
 import styles from './ProjectForm.module.css'
-export const fkhgt = ''
+import InputMoney from '../form/InputMoney'
+
 export default function ProjectForm({ handleSubmit, btnText, projectData }) {
     const [categories, setCategories] = useState([])
     const [project, setProject] = useState(projectData || {})
@@ -52,11 +53,10 @@ export default function ProjectForm({ handleSubmit, btnText, projectData }) {
                 handleOnChange={handleChange}
                 value={project.name ? project.name : ''}
             />
-            <Input
+            <InputMoney
                 type="number"
                 text="Orçamento do projeto"
                 name="budget"
-                placeholder="R$ 00.000,00"
                 handleOnChange={handleChange}
                 value={project.budget ? project.budget : ''}
             />

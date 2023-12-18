@@ -15,7 +15,7 @@ export default function ProjectCard({ id, name, budget, category, handleRemove }
         <div className={styles.project_card}>
             <h4>{name}</h4>
             <p>
-                <span>Orçamento:</span> R${budget}
+                <span>Orçamento:</span> {budget}
             </p>
             <p className={styles.category_text}>
                 <span className={`${styles[category.toLowerCase()]}`}></span> {category}

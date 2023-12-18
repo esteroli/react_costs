@@ -1,5 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { toast } from "react-toastify";
+
+import axios from "axios";
 
 import Container from "../layout/Container"
 import LinkButton from "../layout/LinkButton"
@@ -8,7 +11,6 @@ import Message from "../layout/Message";
 import ProjectCard from "../project/ProjectCard";
 
 import styles from './Projects.module.css'
-import { toast } from "react-toastify";
 
 export default function Projects() {
     const [projects, setProjects] = useState([])
@@ -22,33 +24,20 @@ export default function Projects() {
     useEffect(() => {
         setTimeout(() => {
             //busco os projetos na API, colocamos alguns parâmetros
-            fetch('http://localhost:5000/projects', {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            })
-            //pegamos os dados com o then e transformamos a resposta em json
-            .then(resp => resp.json())
+            axios.get('http://localhost:5000/projects')
             //pegamos os dados em json e transformamos ele, vamos setar os projetos por meio da API
-            .then(data => {
+            .then(({data}) => {
                 // console.log(data)
                 setProjects(data)
                 setRemoveLoading(true)
             })
             //para o caso de dar erro e conseguir debugar a aplicação depois
-            .catch((err) => console.log(err))
+            .catch((err) => console.log(`${err.message}`))
         }, 500)
     }, []) //tô controlando um array vazio que será preenchido depois da função acima
 
     function removeProject(id) {
-        fetch(`http://localhost:5000/projects/${id}`, {
-        method: 'DELETE',
-        headers: {
-            'Content-type': 'application/json',
-        },
-        })
-        .then((resp) => resp.json())
+        axios.delete(`http://localhost:5000/projects/${id}`)
         .then(() => {
             setProjects(projects.filter((project) => project.id !== id))
             toast.success('Projeto removido com sucesso!')
